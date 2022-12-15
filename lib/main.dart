@@ -23,7 +23,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Settings settings = Settings();
+  Settings settings =
+      Settings(); //vai armazenar o estado de quais configurações foram setadas na tela de configurações
   List<Meal> _availableMeals = DUMMY_MEALS;
   List<Meal> _favoriteMeals = [];
 
@@ -31,7 +32,8 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       this.settings = settings;
       _availableMeals = DUMMY_MEALS.where((meal) {
-        final filterGluten = settings.isGlutenFree && !meal.isGlutenFree;
+        final filterGluten =
+            settings.isGlutenFree && !meal.isGlutenFree; //filtro acionado
         final filterLactose = settings.isLactoseFree && !meal.isLactoseFree;
         final filterVegan = settings.isVegan && !meal.isVegan;
         final filterVegetarian = settings.isVegetarian && !meal.isVegetarian;

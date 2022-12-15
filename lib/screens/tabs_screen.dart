@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+
 import 'categories_screen.dart';
 import 'favorite_screen.dart';
+
 import '../components/main_drawer.dart';
 
 import '../models/meal.dart';

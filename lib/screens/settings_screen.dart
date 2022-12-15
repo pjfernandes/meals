@@ -6,6 +6,7 @@ import '../models/settings.dart';
 
 class SettingsScreen extends StatefulWidget {
   final Settings settings;
+
   final Function(Settings)? onSettingsChanged;
 
   const SettingsScreen(this.settings, this.onSettingsChanged);

@@ -5,7 +5,9 @@ import '../models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
   final bool Function(Meal) isFavorite;
+
   final Function(Meal) onToggleFavorite;
+
   const MealDetailScreen(this.isFavorite, this.onToggleFavorite);
 
   _createSectionTitle(BuildContext context, String title) {
