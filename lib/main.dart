@@ -63,9 +63,7 @@ class _MyAppState extends State<MyApp> {
         AppRoutes.CATEGORIES_MEALS: (ctx) =>
             CategoriesMealsScreen(_availableMeals),
         AppRoutes.MEAL_DETAIL: (ctx) => MealDetailScreen(),
-        AppRoutes.SETTINGS: (ctx) => SettingsScreen(
-              onSettingsChanged: _filterMeals,
-            ),
+        AppRoutes.SETTINGS: (ctx) => SettingsScreen(_filterMeals),
       },
     );
   }
